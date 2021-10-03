@@ -1,0 +1,549 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #111;
+    overflow-x: hidden;
+}
+ul{
+ list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* Navbar start*/
+.navbar-brand h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #f78e4c;
+}
+.navbar-light .navbar-toggler-icon {
+	background: none;
+}
+.navbar-light .navbar-toggler {
+	background-color: none;
+    border: transparent;
+    color: transparent; 
+    margin: 0px;
+    border-radius: 0;
+}
+.menu-icon{
+      font-size: 30px;
+      color: #f78e4c; 
+  }
+  .navbar{
+      position: fixed;
+      z-index: 9999;
+      width: 100%;
+      background-color: #111;
+  }
+/* Navbar end */
+
+/* Header section css start */
+.side-menu{
+    padding: 15px 0px;
+    z-index: 9999;
+    background: #1a1a1a;
+    text-align: center;
+}
+.user img{
+    height: 150px;
+    width: 150px;
+    line-height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 5px solid tomato;
+}
+.user h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.user p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.navber ul{
+   list-style: none;
+   padding: 0px 30px;
+}
+.navber ul li a{
+   display: block;
+   color: #ffffff;
+   background: #333;
+   font-family: 'Nunito', sans-serif;
+   font-weight: 400;
+   font-size: 18px;
+   padding: 8px;
+   margin: 10px 0px;
+   border-radius: 15px;
+ }
+ .navber ul li a:hover{
+    background: #f78e4c;
+  }
+
+/* Header section css end */
+
+/* Home section css start */
+#home{
+    padding: 130px 0px 110px 0px;
+}
+#home h3{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    color: #eceaeaf1;
+}
+#home h1{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    color: #eceaeaf1;
+}
+#home span{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    color: #f78e4c;
+}
+#home p{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #eceaeaf1;
+    padding: 15px 0px 0px 0px;
+    margin-bottom: 0px;
+}
+#home a{
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+    background: #333;
+    border-radius: 5px;
+    padding: 8px 50px;
+    margin-top: 35px;
+}
+#home a:hover{
+    background-color: #f78e4c;
+}
+/* Home section css end */
+
+/* About section css start */
+#about{
+    padding: 65px 0px;
+}
+#about h1{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    color: #eceaeaf1;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-bottom: 35px;
+}
+.about-heading span{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    color: #f78e4c;
+}
+.about-heading {
+    border-bottom: 1px solid #fff6;
+}
+.about-text h4{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: #f78e4c;
+   padding: 5px 0px;
+}
+.about-text h4 span{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: #eceaeaf1;
+}
+.about-text p{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #eceaeaf1;
+    padding-bottom: 20px;
+}
+.about-text a{
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    color: #eceaeaf1;
+    background: #333;
+    border-radius: 5px;
+    padding: 8px 50px;
+}
+.about-text a:hover{
+    background-color: #f78e4c;
+}
+.flex-dir{
+    flex-direction: column-reverse;
+}
+.about-box{
+    width: 100%;
+    background: #222;
+    text-align: center;
+    padding: 20px 10px;
+    margin-bottom: 25px;
+}
+.about-box span{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #f78e4c;
+}
+.about-box h3{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #eceaeaf1;
+}
+/* skill part */
+.skill h3{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #eceaeaf1;
+    padding: 20px 0px;
+}
+.skill span{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #f78e4c;
+    padding: 20px 0px;
+}
+.skill-item p{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #eceaeaf1;
+    margin: 10px 0px;
+}
+.skill-item-value{
+    width: 100%;
+    background-color: #b2b2b2;
+}
+.skills{
+    text-align: right;
+    padding-right: 10px;
+    line-height: 25px;
+    color: #f78e4c;
+    /* color: #fff; */
+    background-color: #424242;
+    position: relative;
+    left: 0;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+.html{
+    width: 95%;
+    animation: html 2s;
+}
+@keyframes html{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 95%;
+    }
+}
+.css{
+    width: 85%;
+    animation: css 2s;
+}
+@keyframes css{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 85%;
+    }
+}
+.bootstrap{
+    width: 95%;
+    animation: bootstrap 2s;
+}
+@keyframes bootstrap{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 95%;
+    }
+}
+.js{
+    width: 65%;
+    animation: js 2s;
+}
+@keyframes js{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 65%;
+    }
+}
+.jq{
+    width: 60%;
+    animation: jq 2s;
+}
+@keyframes jq{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 60%;
+    }
+}
+.php{
+    width: 65%;
+    animation: php 2s;
+}
+@keyframes php{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 65%;
+    }
+}
+.laravel{
+    width: 50%;
+    animation: laravel 2s;
+}
+@keyframes laravel{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 50%;
+    }
+}
+/* About section css end */
+
+/* Education section css start */
+#education{
+    padding: 65px 0px;
+}
+#education h1{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    color: #eceaeaf1;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-bottom: 35px;
+}
+.education-heading span{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    color: #f78e4c;
+}
+.education-heading {
+    border-bottom: 1px solid #fff6;
+}
+.graduation-icon{
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: #f78e4c;
+    font-size: 26px;
+    color: #eceaeaf1;
+    text-align: center;
+}
+.graduation-box{
+    width: 100%;
+    color: #eceaeaf1;
+    background: #222;
+    text-align: center;
+    padding: 20px 10px;
+    margin-bottom: 30px;
+}
+.graduation-box h5{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #eceaeaf1;
+    background: #111;
+    text-align: center;
+    padding: 8px 0px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.graduation-box h3{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: #eceaeaf1;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.graduation-box p{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #eceaeaf1;
+    text-align: center;
+}
+/* Education section css end */
+
+/* Portfolio section css start */
+#potfolio{
+    padding: 50px 0px;
+}
+#potfolio h1{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    color: #eceaeaf1;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-bottom: 35px;
+}
+.potfolio-heading span{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    color: #f78e4c;
+}
+.potfolio-heading {
+    border-bottom: 1px solid #fff6;
+}
+.portfolio-img a img{
+    height: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+/* Portfolio section css end */
+
+/* Contact section css start */
+#contact{
+    padding: 65px 0px;
+}
+#contact h1{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    color: #eceaeaf1;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-bottom: 35px;
+}
+.contact-heading span{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    color: #f78e4c;
+}
+.contact-heading {
+    border-bottom: 1px solid #fff6;
+}
+/* Contact left */
+#contact h2{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: #eceaeaf1;
+    text-align: center;
+    padding: 50px 0px 20px 0px;
+}
+.contact-icon{
+    font-size: 20px;
+    color: #f78e4c;
+    margin: 15px 0px;
+}
+.contact-item-text{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #eceaeaf1;
+    margin: 10px 0px;
+}
+/* Contact right */
+.form-control {
+	display: block;
+	width: 100%;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+    background-color: #222;
+	background-clip: padding-box;
+	border: none;
+	appearance: none;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form-control:focus {
+    color: #eceaeaf1;
+    background-color: #222;
+	border-color: #222;
+	outline: 0;
+	box-shadow: none;
+}
+::placeholder {
+    color: #eceaeaf1 !important;
+    opacity: 1;
+    font-size: 17px !important;
+  }
+.contact-right-side a{
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #eceaeaf1;
+    padding: 8px 20px;
+    background-color: #222;
+    border-radius: 5px;
+  }
+  .contact-right-side a:hover{
+    background-color: #f78e4c;
+  }
+/* Contact section css end */
+
+/* Footer section css start */
+#footer{
+    padding: 15px 0px;
+    background-color: #222;
+}
+.footer-icon a{
+    display: inline-block;
+    font-size: 24px;
+    color: #eceaeaf1;
+    padding: 0px 15px 10px 15px ;
+}
+.footer-text p{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #eceaeaf1;
+    text-align: center;
+    margin-bottom: 0;
+}
+/* Footer section css end */
+
+/* 
+     font-family: 'Nunito', sans-serif;
+
+    font-family: 'Roboto', sans-serif;
+*/

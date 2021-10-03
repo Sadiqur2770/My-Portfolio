@@ -1,0 +1,674 @@
+ /* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+/* extra small */
+@media (max-width: 343.98px){
+    .side-menu{
+        padding: 8px 0px;
+    }
+    .user img{
+        height: 140px;
+        width: 140px;
+        line-height: 140px;
+        margin-bottom: 7px;
+    }
+    .user h2{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .user p{
+        font-size: 17px;
+        margin-bottom: 0px !important;
+    }
+    .navber ul li a{
+        font-size: 17px;
+        padding: 6px;
+        margin: 8px 0px;
+        border-radius: 15px;
+      }
+    #home{
+        padding: 125px 0px 70px 0px;
+    }
+    #home h3{
+        font-size: 22px;
+    }
+    #home h1{
+        font-size: 26px;
+    }
+    #home span{
+        font-size: 26px;
+    }
+    #home p{
+        font-size: 15px;
+        line-height: 28px;
+    }
+    #home a{
+        font-size: 16px;
+        padding: 8px 50px;
+    }
+    #about{
+        padding: 45px 0px;
+    }
+    #about h1{
+        font-size: 26px;
+    }
+    .about-heading span{
+        font-size: 26px;
+    }
+    .about-text h4{
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .about-text h4 span{
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .about-text p{
+        font-size: 15px;
+    }
+    .about-text a{
+        font-size: 16px;
+        padding: 8px 70px;
+        margin-bottom: 25px;
+    }
+    .about-box{
+        padding: 17px 3px;
+        margin-bottom: 18px;
+    }
+    .about-box span{
+        font-weight: 600;
+        font-size: 22px;
+    }
+    .about-box h3{
+        font-weight: 400;
+        font-size: 11px;
+        padding: 10px 0px;
+    }
+    .skill h3{
+        font-size: 20px;
+    }
+    .skill span{
+        font-size: 20px;
+    }
+    .skill-item p{
+        font-size: 14px;
+    }
+    #education{
+        padding: 35px 0px;
+    }
+    #education h1{
+        font-size: 26px;
+    }
+    .education-heading span{
+        font-size: 26px;
+    }
+    .graduation-icon{
+        height: 38px;
+        width: 38px;
+        line-height: 38px;
+        font-size: 23px;
+    }
+    .graduation-box h5{
+        font-size: 18px;
+        padding: 8px 0px;
+    }
+    .graduation-box{
+        padding: 20px 5px;
+        margin-bottom: 20px;
+    }
+    .graduation-box h3{
+        font-size: 19px;
+    }
+    .graduation-box p{
+        font-size: 15px;
+    }
+    #potfolio{
+        padding: 15px 0px 25px 0px;
+    }
+    #potfolio h1{
+        font-size: 26px;
+    }
+    .potfolio-heading span{
+        font-size: 26px;
+    }
+    #contact{
+        padding: 35px 0px;
+    }
+    #contact h1{
+        font-size: 26px;
+    }
+    .contact-heading span{
+        font-size: 26px;
+    }
+    #contact h2{
+        font-size: 22px;
+        padding: 5px 0px;
+    }
+    .contact-icon{
+        font-size: 15px;
+        margin: 13px 0px;
+    }
+    .contact-item-text{
+        font-size: 15px;
+        margin: 10px 0px;
+    }
+    ::placeholder {
+        font-size: 13px !important;
+      }
+      .contact-right-side a{
+        font-size: 16px;
+        padding: 8px 40px;
+      }
+      .footer-icon a{
+        font-size: 18px;
+        padding: 0px 8px 10px 8px ;
+    }
+    .footer-text p{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+    }
+}
+/*`sm` applies to x-small devices (portrait phones, less than 576px)*/
+@media (min-width: 344px) and (max-width: 575.98px) { 
+    .side-menu{
+        padding: 8px 0px;
+    }
+    .user img{
+        height: 140px;
+        width: 140px;
+        line-height: 140px;
+        margin-bottom: 7px;
+    }
+    .user h2{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .user p{
+        font-size: 17px;
+        margin-bottom: 0px !important;
+    }
+    .navber ul li a{
+        font-size: 17px;
+        padding: 6px;
+        margin: 8px 0px;
+        border-radius: 15px;
+      }
+    #home{
+        padding: 125px 0px 70px 0px;
+    }
+    #home h3{
+        font-size: 22px;
+    }
+    #home h1{
+        font-size: 31px;
+    }
+    #home span{
+        font-size: 31px;
+    }
+    #home p{
+        font-size: 17px;
+        line-height: 28px;
+    }
+    #home a{
+        font-size: 16px;
+        padding: 8px 70px;
+    }
+    #about{
+        padding: 45px 0px;
+    }
+    #about h1{
+        font-size: 32px;
+    }
+    .about-heading span{
+        font-size: 32px;
+    }
+    .about-text h4{
+        font-weight: 600;
+        font-size: 25px;
+    }
+    .about-text h4 span{
+        font-weight: 600;
+        font-size: 25px;
+    }
+    .about-text p{
+        font-size: 16px;
+    }
+    .about-text a{
+        font-size: 17px;
+        padding: 8px 70px;
+        margin-bottom: 25px;
+    }
+    .about-box{
+        padding: 17px 3px;
+        margin-bottom: 18px;
+    }
+    .about-box span{
+        font-weight: 600;
+        font-size: 24px;
+    }
+    .about-box h3{
+        font-weight: 600;
+        font-size: 13px;
+        padding: 10px 0px;
+    }
+    .skill h3{
+        font-size: 22px;
+    }
+    .skill span{
+        font-size: 22px;
+    }
+    .skill-item p{
+        font-size: 15px;
+    }
+    #education{
+        padding: 40px 0px;
+    }
+    #education h1{
+        font-size: 32px;
+    }
+    .education-heading span{
+        font-size: 32px;
+    }
+    .graduation-icon{
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        font-size: 23px;
+    }
+    .graduation-box h5{
+        font-size: 19px;
+        padding: 8px 0px;
+    }
+    .graduation-box{
+        padding: 20px 5px;
+    }
+    .graduation-box h3{
+        font-size: 20px;
+    }
+    .graduation-box p{
+        font-size: 16px;
+    }
+    #potfolio{
+        padding: 15px 0px 30px 0px;
+    }
+    #potfolio h1{
+        font-size: 32px;
+    }
+    .potfolio-heading span{
+        font-size: 32px;
+    }
+    #contact{
+        padding: 40px 0px;
+    }
+    #contact h1{
+        font-size: 32px;
+    }
+    .contact-heading span{
+        font-size: 32px;
+    }
+    #contact h2 {
+        font-size: 24px;
+        padding: 10px 0px 20px 0px;
+        text-align: left;
+        margin-left: 77px;
+    }
+    .contact-icon{
+        font-size: 16px;
+        margin: 13px 0px;
+    }
+    .contact-item-text{
+        font-size: 16px;
+        margin: 10px 0px;
+    }
+    ::placeholder {
+        font-size: 14px !important;
+      }
+      .contact-right-side a{
+        font-size: 17px;
+        padding: 8px 40px;
+      }
+      .footer-icon a{
+        font-size: 20px;
+        padding: 0px 8px 10px 8px ;
+    }
+    .footer-text p{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+    }
+ } 
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .side-menu{
+        padding: 8px 0px;
+    }
+    .user img{
+        height: 140px;
+        width: 140px;
+        line-height: 140px;
+        margin-bottom: 7px;
+    }
+    .user h2{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .user p{
+        font-size: 17px;
+        margin-bottom: 0px !important;
+    }
+    .navber ul li a{
+        font-size: 17px;
+        padding: 6px;
+        margin: 8px 0px;
+        border-radius: 15px;
+      }
+     #home{
+        padding: 125px 0px 90px 0px;
+    }
+    #home h3{
+        font-size: 22px;
+    }
+    #home h1{
+        font-size: 38px;
+    }
+    #home span{
+        font-size: 38px;
+    }
+    #home p{
+        font-size: 16px;
+    }
+    #home a{
+        font-size: 16px;
+        padding: 7px 70px;
+    }
+    #about h1{
+        font-size: 38px;
+    }
+    .about-heading span{
+        font-size: 38px;
+    }
+    .about-text h4{
+        font-weight: 600;
+        font-size: 28px;
+    }
+    .about-text h4 span{
+        font-weight: 600;
+        font-size: 28px;
+    }
+    .about-text p{
+        font-size: 18px;
+    }
+    .about-text a{
+        font-size: 16px;
+        padding: 7px 70px;
+        margin-bottom: 25px;
+    }
+    .about-box{
+        padding: 17px 10px;
+        margin-bottom: 17px;
+    }
+    .about-box span{
+        font-weight: 600;
+        font-size: 24px;
+    }
+    .about-box h3{
+        font-weight: 600;
+        font-size: 17px;
+        padding: 10px 0px;
+    }
+    .skill h3{
+        font-size: 25px;
+    }
+    .skill span{
+        font-size: 25px;
+    }
+    .skill-item p{
+        font-size: 16px;
+    }
+    #education{
+        padding: 55px 0px;
+    }
+    #education h1{
+        font-size: 38px;
+    }
+    .education-heading span{
+        font-size: 38px;
+    }
+    .graduation-icon{
+        height: 38px;
+        width: 38px;
+        line-height: 38px;
+        font-size: 23px;
+    }
+    .graduation-box h5{
+        font-size: 20px;
+        padding: 8px 0px;
+    }
+    .graduation-box{
+        padding: 20px 5px;
+    }
+    .graduation-box h3{
+        font-size: 20px;
+    }
+    .graduation-box p{
+        font-size: 16px;
+    }
+    #potfolio{
+        padding: 30px 0px;
+    }
+    #potfolio h1{
+        font-size: 38px;
+    }
+    .potfolio-heading span{
+        font-size: 38px;
+    }
+    #contact{
+        padding: 50px 0px;
+    }
+    #contact h1{
+        font-size: 38px;
+    }
+    .contact-heading span{
+        font-size: 38px;
+    }
+    #contact h2 {
+        font-size: 28px;
+        padding: 10px 0px 20px 0px;
+        text-align: left;
+        margin-left: 18px;
+    }
+    .contact-icon{
+        font-size: 16px;
+        margin: 13px 0px;
+    }
+    .contact-item-text{
+        font-size: 16px;
+        margin: 10px 0px;
+    }
+    ::placeholder {
+        font-size: 14px !important;
+      }
+      .contact-right-side a{
+        font-size: 16px;
+        padding: 8px 40px;
+      }
+      .footer-icon a{
+        font-size: 20px;
+        padding: 0px 8px 10px 8px ;
+    }
+    .footer-text p{
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+    }
+}
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    #home{
+        padding: 125px 0px 100px 0px;
+    }
+    #home h3{
+        font-size: 24px;
+    }
+    #home h1{
+        font-size: 42px;
+    }
+    #home span{
+        font-size: 42px;
+    }
+    #home p{
+        font-size: 17px;
+    }
+    #home a{
+        font-size: 17px;
+        padding: 7px 70px;
+    }
+    #about h1{
+        font-size: 42px;
+    }
+    .about-heading span{
+        font-size: 42px;
+    }
+    .about-text h4{
+        font-weight: 600;
+        font-size: 29px;
+    }
+    .about-text h4 span{
+        font-weight: 600;
+        font-size: 29px;
+    }
+    .about-text p{
+        font-size: 17px;
+    }
+    .about-text a{
+        font-size: 17px;
+        padding: 7px 70px;
+    }
+    .about-box{
+        padding: 17px 3px;
+        margin-bottom: 15px;
+    }
+    .about-box span{
+        font-weight: 600;
+        font-size: 22px;
+    }
+    .about-box h3{
+        font-weight: 400;
+        font-size: 15px;
+    }
+    .skill h3{
+        font-size: 28px;
+    }
+    .skill span{
+        font-size: 28px;
+    }
+    .skill-item p{
+        font-size: 17px;
+    }
+    #education h1{
+        font-size: 42px;
+    }
+    .education-heading span{
+        font-size: 42px;
+    }
+    .graduation-icon{
+        height: 48px;
+        width: 48px;
+        line-height: 48px;
+        font-size: 26px;
+    }
+    .graduation-box{
+        padding: 20px 6px;
+    }
+    .graduation-box h3{
+        font-size: 22px;
+    }
+    .graduation-box p{
+        font-size: 17px;
+    }
+    #potfolio{
+        padding: 40px 0px;
+    }
+    #potfolio h1{
+        font-size: 42px;
+    }
+    .potfolio-heading span{
+        font-size: 42px;
+    }
+    #contact{
+        padding: 60px 0px;
+    }
+    #contact h1{
+        font-size: 42px;
+    }
+    .contact-heading span{
+        font-size: 42px;
+    }
+    #contact h2 {
+        font-size: 32px;
+        padding: 10px 0px 20px 0px;
+        text-align: left;
+        margin-left: 20px;
+    }
+    .contact-icon{
+        font-size: 18px;
+        margin: 13px 0px;
+    }
+    .contact-item-text{
+        font-size: 17px;
+        margin: 10px 0px;
+    }
+    ::placeholder {
+        font-size: 16px !important;
+      }
+      .contact-right-side a{
+        font-size: 17px;
+        padding: 8px 40px;
+      }
+      .footer-icon a{
+        font-size: 22px;
+        padding: 0px 10px 10px 10px ;
+    }
+ }
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .about-box{
+        padding: 25px 17px;
+        margin-bottom: 20px;
+    }
+    .about-box span{
+        font-weight: 700;
+        font-size: 22px;
+    }
+    .about-box h3{
+        font-weight: 600;
+        font-size: 22px;
+    }
+    #contact h2 {
+        padding: 10px 0px 20px 0px;
+        text-align: left;
+        margin-left: 25px;
+    }
+}
+ /* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+    .about-box h3{
+        font-size: 20px;
+    }
+    #contact h2 {
+        padding: 10px 0px 20px 0px;
+        text-align: left;
+        margin-left: 30px;
+    }
+}
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    #contact h2 {
+        padding: 10px 0px 20px 0px;
+        text-align: left;
+        margin-left: 40px;
+    }
+}
+
+
+
