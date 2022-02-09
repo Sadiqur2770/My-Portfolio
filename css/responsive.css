@@ -1,32 +1,55 @@
  /* X-Small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
 /* extra small */
-@media (max-width: 343.98px){
-    .side-menu{
-        padding: 8px 0px;
+@media (max-width: 369.98px){
+    #navber{
+        position: fixed;
+        bottom: -100%;
+        right: 0;
+        width: 100%;
+        transition: .7s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #navber.active{
+        height: calc(100vh - 50px);
+        bottom: 0;
+        width: 100%;
+    }
+    #navber ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+        border-radius: 5px;
+    }
+    #navber ul li a{
+        background: #1a1a1a;
+        padding: 0px 65px;
+        margin: 3px 29px 3px 0px;
+        border-radius: 10px;
+        font-size: 16px; 
+      }
+      #navber ul li a:hover{
+          color: #ffffff;
+          background-color: #f78e4c;
+      }
+    .logo h1{
+        font-size: 32px;
+        padding-left: 30px;
+    }
+    #toggle{
+        right: 30px;
     }
     .user img{
-        height: 140px;
-        width: 140px;
-        line-height: 140px;
-        margin-bottom: 7px;
+        height: 155px;
+        width: 155px;
+        line-height: 155px;
+        margin-bottom: 9px;
     }
-    .user h2{
-        font-size: 30px;
-        font-weight: 700;
-    }
-    .user p{
-        font-size: 17px;
-        margin-bottom: 0px !important;
-    }
-    .navber ul li a{
-        font-size: 17px;
-        padding: 6px;
-        margin: 8px 0px;
-        border-radius: 15px;
-      }
     #home{
-        padding: 125px 0px 70px 0px;
+        padding: 90px 0px 0px 0px;
     }
     #home h3{
         font-size: 22px;
@@ -45,9 +68,6 @@
         font-size: 16px;
         padding: 8px 50px;
     }
-    #about{
-        padding: 45px 0px;
-    }
     #about h1{
         font-size: 26px;
     }
@@ -61,6 +81,10 @@
     .about-text h4 span{
         font-weight: 600;
         font-size: 20px;
+    }
+    .about-text h5{
+        font-size: 16px;
+       padding: 4px 0px 0px 0px;
     }
     .about-text p{
         font-size: 15px;
@@ -92,9 +116,6 @@
     .skill-item p{
         font-size: 14px;
     }
-    #education{
-        padding: 35px 0px;
-    }
     #education h1{
         font-size: 26px;
     }
@@ -121,17 +142,30 @@
     .graduation-box p{
         font-size: 15px;
     }
-    #potfolio{
-        padding: 15px 0px 25px 0px;
-    }
     #potfolio h1{
         font-size: 26px;
     }
     .potfolio-heading span{
         font-size: 26px;
     }
-    #contact{
-        padding: 35px 0px;
+    #service h1{
+        font-size: 26px;
+    }
+    .service-heading span{
+        font-size: 26px;
+    }
+    .service-box{
+        padding: 25px 10px;
+    }
+    .service-box h5{
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .service-box-icon{
+        font-size: 32px;
+    }
+    .service-box-icon:hover{
+        font-size: 37px;
     }
     #contact h1{
         font-size: 26px;
@@ -169,32 +203,55 @@
     }
 }
 /*`sm` applies to x-small devices (portrait phones, less than 576px)*/
-@media (min-width: 344px) and (max-width: 575.98px) { 
-    .side-menu{
-        padding: 8px 0px;
+@media (min-width: 370px) and (max-width: 575.98px) { 
+    #navber{
+        position: fixed;
+        bottom: -100%;
+        right: 0;
+        width: 100%;
+        transition: .7s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #navber.active{
+        height: calc(100vh - 50px);
+        bottom: 0;
+        width: 100%;
+    }
+    #navber ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+        border-radius: 5px;
+    }
+    #navber ul li a{
+        background: #1a1a1a;
+        padding: 0px 95px;
+        margin: 4px 29px 4px 0px;
+        border-radius: 10px;
+        font-size: 17px; 
+      }
+      #navber ul li a:hover{
+          color: #ffffff;
+          background-color: #f78e4c;
+      }
+    .logo h1{
+        font-size: 34px;
+        padding-left: 30px;
+    }
+    #toggle{
+        right: 30px;
     }
     .user img{
-        height: 140px;
-        width: 140px;
-        line-height: 140px;
-        margin-bottom: 7px;
+        height: 155px;
+        width: 155px;
+        line-height: 155px;
+        margin-bottom: 8px;
     }
-    .user h2{
-        font-size: 30px;
-        font-weight: 700;
-    }
-    .user p{
-        font-size: 17px;
-        margin-bottom: 0px !important;
-    }
-    .navber ul li a{
-        font-size: 17px;
-        padding: 6px;
-        margin: 8px 0px;
-        border-radius: 15px;
-      }
     #home{
-        padding: 125px 0px 70px 0px;
+        padding: 95px 0px 0px 0px;
     }
     #home h3{
         font-size: 22px;
@@ -213,9 +270,6 @@
         font-size: 16px;
         padding: 8px 70px;
     }
-    #about{
-        padding: 45px 0px;
-    }
     #about h1{
         font-size: 32px;
     }
@@ -229,6 +283,10 @@
     .about-text h4 span{
         font-weight: 600;
         font-size: 25px;
+    }
+    .about-text h5{
+        font-size: 20px;
+       padding: 4px 0px 0px 0px;
     }
     .about-text p{
         font-size: 16px;
@@ -260,9 +318,6 @@
     .skill-item p{
         font-size: 15px;
     }
-    #education{
-        padding: 40px 0px;
-    }
     #education h1{
         font-size: 32px;
     }
@@ -288,17 +343,30 @@
     .graduation-box p{
         font-size: 16px;
     }
-    #potfolio{
-        padding: 15px 0px 30px 0px;
-    }
     #potfolio h1{
         font-size: 32px;
     }
     .potfolio-heading span{
         font-size: 32px;
     }
-    #contact{
-        padding: 40px 0px;
+    #service h1{
+        font-size: 32px;
+    }
+    .service-heading span{
+        font-size: 32px;
+    }
+    .service-box{
+        padding: 25px 10px;
+    }
+    .service-box h5{
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .service-box-icon{
+        font-size: 33px;
+    }
+    .service-box-icon:hover{
+        font-size: 38px;
     }
     #contact h1{
         font-size: 32px;
@@ -339,31 +407,53 @@
  } 
  /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) { 
-    .side-menu{
-        padding: 8px 0px;
+    #navber{
+        position: fixed;
+        bottom: -100%;
+        right: 0;
+        width: 100%;
+        transition: .7s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #navber.active{
+        height: calc(100vh - 50px);
+        bottom: 0;
+        width: 100%;
+    }
+    #navber ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+        border-radius: 5px;
+    }
+    #navber ul li a{
+        background: #1a1a1a;
+        padding: 0px 160px;
+        margin: 4px 29px 4px 0px;
+        border-radius: 10px; 
+      }
+      #navber ul li a:hover{
+          color: #ffffff;
+          background-color: #f78e4c;
+      }
+    .logo h1{
+        font-size: 34px;
+        padding-left: 30px;
+    }
+    #toggle{
+        right: 30px;
     }
     .user img{
-        height: 140px;
-        width: 140px;
-        line-height: 140px;
-        margin-bottom: 7px;
+        height: 165px;
+        width: 165px;
+        line-height: 165px;
+        margin-bottom: 10px;
     }
-    .user h2{
-        font-size: 30px;
-        font-weight: 700;
-    }
-    .user p{
-        font-size: 17px;
-        margin-bottom: 0px !important;
-    }
-    .navber ul li a{
-        font-size: 17px;
-        padding: 6px;
-        margin: 8px 0px;
-        border-radius: 15px;
-      }
      #home{
-        padding: 125px 0px 90px 0px;
+        padding: 100px 0px 0px 0px;
     }
     #home h3{
         font-size: 22px;
@@ -381,6 +471,9 @@
         font-size: 16px;
         padding: 7px 70px;
     }
+    #about{
+        padding: 80px 0px 0px 0px;
+    }
     #about h1{
         font-size: 38px;
     }
@@ -394,6 +487,10 @@
     .about-text h4 span{
         font-weight: 600;
         font-size: 28px;
+    }
+    .about-text h5{
+        font-size: 22px;
+       padding: 4px 0px 0px 0px;
     }
     .about-text p{
         font-size: 18px;
@@ -426,7 +523,7 @@
         font-size: 16px;
     }
     #education{
-        padding: 55px 0px;
+        padding: 80px 0px 0px 0px;
     }
     #education h1{
         font-size: 38px;
@@ -453,17 +550,30 @@
     .graduation-box p{
         font-size: 16px;
     }
-    #potfolio{
-        padding: 30px 0px;
-    }
     #potfolio h1{
         font-size: 38px;
     }
     .potfolio-heading span{
         font-size: 38px;
     }
-    #contact{
-        padding: 50px 0px;
+    #service h1{
+        font-size: 38px;
+    }
+    .service-heading span{
+        font-size: 38px;
+    }
+    .service-box{
+        padding: 20px 5px;
+    }
+    .service-box h5{
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    .service-box-icon{
+        font-size: 35px;
+    }
+    .service-box-icon:hover{
+        font-size: 40px;
     }
     #contact h1{
         font-size: 38px;
@@ -473,7 +583,7 @@
     }
     #contact h2 {
         font-size: 28px;
-        padding: 10px 0px 20px 0px;
+        padding: 0px 0px 20px 0px;
         text-align: left;
         margin-left: 18px;
     }
@@ -497,15 +607,23 @@
         padding: 0px 8px 10px 8px ;
     }
     .footer-text p{
-        font-family: 'Nunito', sans-serif;
-        font-weight: 400;
         font-size: 15px;
     }
 }
  /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) { 
-    #home{
-        padding: 125px 0px 100px 0px;
+    .logo h1{
+        font-size: 34px;
+        padding-left: 15px;
+    }
+    #navber.active{
+        width: 648px;
+    }
+    #toggle{
+        top: 5px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
     }
     #home h3{
         font-size: 24px;
@@ -536,6 +654,9 @@
     .about-text h4 span{
         font-weight: 600;
         font-size: 29px;
+    }
+    .about-text h5{
+        font-size: 23px;
     }
     .about-text p{
         font-size: 17px;
@@ -586,17 +707,30 @@
     .graduation-box p{
         font-size: 17px;
     }
-    #potfolio{
-        padding: 40px 0px;
-    }
     #potfolio h1{
         font-size: 42px;
     }
     .potfolio-heading span{
         font-size: 42px;
     }
-    #contact{
-        padding: 60px 0px;
+    #service h1{
+        font-size: 42px;
+    }
+    .service-heading span{
+        font-size: 42px;
+    }
+    .service-box{
+        padding: 20px 5px;
+    }
+    .service-box h5{
+        font-size: 23px;
+        margin-bottom: 35px;
+    }
+    .service-box-icon{
+        font-size: 40px;
+    }
+    .service-box-icon:hover{
+        font-size: 45px;
     }
     #contact h1{
         font-size: 42px;
@@ -632,6 +766,7 @@
  }
  /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) { 
+   
     .about-box{
         padding: 25px 17px;
         margin-bottom: 20px;
@@ -642,7 +777,7 @@
     }
     .about-box h3{
         font-weight: 600;
-        font-size: 22px;
+        font-size: 18px;
     }
     #contact h2 {
         padding: 10px 0px 20px 0px;
@@ -652,8 +787,14 @@
 }
  /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 1399.98px) { 
+
     .about-box h3{
         font-size: 20px;
+    }
+    .user img{
+        height: 185px;
+        width: 185px;
+        line-height: 185px;
     }
     #contact h2 {
         padding: 10px 0px 20px 0px;
@@ -663,12 +804,14 @@
 }
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) { 
+    .user img{
+        height: 185px;
+        width: 185px;
+        line-height: 185px;
+    }
     #contact h2 {
         padding: 10px 0px 20px 0px;
         text-align: left;
         margin-left: 40px;
     }
 }
-
-
-
