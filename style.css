@@ -1,9 +1,12 @@
 
+
 body{
     margin: 0;
     padding: 0;
     background: #111;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
 }
 ul{
  list-style: none;
@@ -12,62 +15,102 @@ a{
     text-decoration: none;
 }
 /* Navbar start*/
-.navbar-brand h1{
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #111;
+    box-shadow: 0 5px 25px rgb(230, 227, 227,0.07);
+    z-index: 9999;
+}
+.logo h1{
     font-family: 'Nunito', sans-serif;
     font-size: 36px;
     font-weight: 700;
     color: #f78e4c;
+    height: 50px;
+    line-height: 55px;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
 }
-.navbar-light .navbar-toggler-icon {
-	background: none;
+#toggle{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: #111;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.navbar-light .navbar-toggler {
-	background-color: none;
-    border: transparent;
-    color: transparent; 
-    margin: 0px;
-    border-radius: 0;
+#toggle::before{
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 2px;
+    background: #f78e4c;
+    transform: translateY(-5px);
+    transition: .3s;
 }
-.menu-icon{
-      font-size: 30px;
-      color: #f78e4c; 
-  }
-  .navbar{
-      position: fixed;
-      z-index: 9999;
-      width: 100%;
-      background-color: #111;
-  }
+#toggle::after{
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 2px;
+    background: #f78e4c;
+    transform: translateY(5px);
+    transition: .3s;
+}
+#toggle.active::before{
+    transform: translateY(0px) rotate(45deg);
+}
+#toggle.active::after{
+    transform: translateY(0px) rotate(-45deg);
+}
+#navber{
+    position: relative;
+    height: 50px;
+    right: 80px;
+    transition: .8s;
+    width: 0px;
+    overflow: hidden;
+}
+#navber.active{
+    width: 679px;
+}
+#navber ul{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+#navber ul li a{
+    height: 50px;
+    line-height: 50px;
+    color: #f78e4c;
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 0px 8px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#navber ul li a:hover{
+    color: #ffffff;
+}
 /* Navbar end */
 
 /* Header section css start */
-.side-menu{
-    padding: 15px 0px;
-    z-index: 9999;
-    background: #1a1a1a;
-    text-align: center;
-}
-.user img{
-    height: 150px;
-    width: 150px;
-    line-height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-    border: 5px solid tomato;
-}
-.user h2{
-    font-family: 'Nunito', sans-serif;
-    font-size: 32px;
-    font-weight: 700;
-    color: #ffffff;
-}
-.user p{
-    font-family: 'Nunito', sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    color: #ffffff;
-}
+
 .navber ul{
    list-style: none;
    padding: 0px 30px;
@@ -91,7 +134,20 @@ a{
 
 /* Home section css start */
 #home{
-    padding: 130px 0px 110px 0px;
+    padding: 100px 0px 20px 0px;
+}
+.user{
+    padding: 0px 0px;
+    text-align: center;
+}
+.user img{
+    height: 175px;
+    width: 175px;
+    line-height: 175px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid tomato;
 }
 #home h3{
     font-family: 'Nunito', sans-serif;
@@ -139,7 +195,7 @@ a{
 
 /* About section css start */
 #about{
-    padding: 65px 0px;
+    padding: 80px 0px 5px 0px;
 }
 #about h1{
     font-family: 'Nunito', sans-serif;
@@ -165,6 +221,13 @@ a{
     font-size: 32px;
     color: #f78e4c;
    padding: 5px 0px;
+}
+.about-text h5{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #eceaeaf1;
+   padding: 3px 0px 0px 0px;
 }
 .about-text h4 span{
     font-family: 'Nunito', sans-serif;
@@ -246,7 +309,6 @@ a{
     padding-right: 10px;
     line-height: 25px;
     color: #f78e4c;
-    /* color: #fff; */
     background-color: #424242;
     position: relative;
     left: 0;
@@ -254,7 +316,7 @@ a{
     transition: 0.3s ease;
 }
 .html{
-    width: 95%;
+    width: 90%;
     animation: html 2s;
 }
 @keyframes html{
@@ -262,7 +324,7 @@ a{
         width: 0%;
     }
     to{
-        width: 95%;
+        width: 90%;
     }
 }
 .css{
@@ -278,7 +340,7 @@ a{
     }
 }
 .bootstrap{
-    width: 95%;
+    width: 85%;
     animation: bootstrap 2s;
 }
 @keyframes bootstrap{
@@ -286,7 +348,7 @@ a{
         width: 0%;
     }
     to{
-        width: 95%;
+        width: 85%;
     }
 }
 .js{
@@ -341,7 +403,7 @@ a{
 
 /* Education section css start */
 #education{
-    padding: 65px 0px;
+    padding: 80px 0px 0px 0px;
 }
 #education h1{
     font-family: 'Nunito', sans-serif;
@@ -377,7 +439,7 @@ a{
     background: #222;
     text-align: center;
     padding: 20px 10px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 .graduation-box h5{
     font-family: 'Nunito', sans-serif;
@@ -409,7 +471,7 @@ a{
 
 /* Portfolio section css start */
 #potfolio{
-    padding: 50px 0px;
+    padding: 80px 0px 0px 0px;
 }
 #potfolio h1{
     font-family: 'Nunito', sans-serif;
@@ -436,9 +498,62 @@ a{
 }
 /* Portfolio section css end */
 
+/* Service section css start */
+#service{
+    padding: 80px 0px 0px 0px;
+}
+#service h1{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    color: #eceaeaf1;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-bottom: 35px;
+}
+.service-heading span{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    color: #f78e4c;
+}
+.service-heading {
+    border-bottom: 1px solid #fff6;
+}
+.service-box{
+    width: 100%;
+    color: #eceaeaf1;
+    background: #222;
+    text-align: center;
+    padding: 40px 10px;
+    margin-bottom: 15px;
+}
+.service-box h5{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    color: #eceaeaf1;
+    background: #111;
+    text-align: center;
+    padding: 8px 0px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.service-box-icon{
+    font-size: 48px;
+    color: #f78e4c;
+}
+.service-box-icon:hover{
+    font-size: 53px;
+    color: #eceaeaf1;
+    transition: .3s all;
+    cursor: pointer;
+}
+/* Service section css end */
+
 /* Contact section css start */
 #contact{
-    padding: 65px 0px;
+    padding: 80px 0px 0px 0px;
 }
 #contact h1{
     font-family: 'Nunito', sans-serif;
@@ -512,9 +627,10 @@ a{
     font-weight: 600;
     font-size: 18px;
     color: #eceaeaf1;
-    padding: 8px 20px;
+    padding: 8px 40px;
     background-color: #222;
     border-radius: 5px;
+    margin-bottom: 25px;
   }
   .contact-right-side a:hover{
     background-color: #f78e4c;
