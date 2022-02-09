@@ -33,51 +33,39 @@
 
 <body>
     <!-- Navbar section start -->
-    <nav class="navbar  navbar-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <h1><i>SR</i></h1>
-            </a>
-            <button class="navbar-toggler" type="" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon float-end"><i class="fas fa-ellipsis-v menu-icon "></i></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto text-center mb-2 mb-lg-0">
-                    <div class="side-menu">
-                        <div class="user">
-                            <img src="img/profile picture.jpg" alt="Profile picture not found" class="img-fluid">
-                            <h2><i>Sadiqur Rahman</i></h2>
-                            <p>Full Stack Web Developer</p>
-                        </div>
-                        <nav class="navber">
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#education">Education</a></li>
-                                <li><a href="#potfolio">Portfolio</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <!-- <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li> -->
+    <div class="container">
+        <header id="header">
+            <div class="logo">
+                <a href="#">
+                    <h1><i>SR</i></h1>
+                </a>
+            </div>
+            <div id="toggle"></div>
+            <div id="navber">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#potfolio">Portfolio</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-        </div>
-    </nav>
+        </header>
+    </div>
     <!-- Navbar section end -->
     <!-- Home section stard -->
     <section id="home">
         <div class="container">
             <div class="row">
+                <div class="col-lg-10 m-auto">
+                    <div class="user">
+                        <img src="img/profile picture.jpg" alt="Profile picture not found" class="img-fluid">
+                    </div>
+                </div>
                 <div class="col-lg-8 col-md-10 col-sm-11 col-11 m-auto">
                     <h3>Hi there !</h3>
-                    <h1>I'm <span>Sadiqur Rahman</span></h1>
+                    <h1>I'm <span class="typed"></span></h1>
                     <p>It's really fun to make something your own way. Creativity is most important in a growing world.
                         In addition that, the ones that I think are most needed are laughter, patiene, kindness and
                         responsibility.</p>
@@ -99,7 +87,7 @@
                         <div class="col-lg-6 col-md-6 col-sm-10 col-12 m-auto">
                             <div class="about-text">
                                 <h4><span>Name: </span>Sadiqur Rahman</h4>
-                                <h4><span>Age: </span>22</h4>
+                                <h5>Full Stack Web Developer</h5>
                                 <p><i>Experience Crafter from Bangladesh.</i></p>
                                 <a href="https://drive.google.com/file/d/1tFt3AlcigmbwS-op3s8cWxjzJ2yPd3nA/view?usp=sharing"
                                     target="_blank">CV</a>
@@ -146,7 +134,7 @@
                         <p>HTML 5</p>
                     </div>
                     <div class="skill-item-value">
-                        <div class="skills html">95%</div>
+                        <div class="skills html">90%</div>
                     </div>
                     <div class="skill-item">
                         <p>CSS 3</p>
@@ -158,7 +146,7 @@
                         <p>Bootstrap 5</p>
                     </div>
                     <div class="skill-item-value">
-                        <div class="skills bootstrap">95%</div>
+                        <div class="skills bootstrap">85%</div>
                     </div>
                     <div class="skill-item">
                         <p>JavaScript</p>
@@ -237,7 +225,7 @@
                                 </div>
                                 <div class="col-lg-10 col-md-10 col-sm-10 col-10">
                                     <div class="graduation-box">
-                                        <h5>2021</h5>
+                                        <h5>2022</h5>
                                         <h3>BSC in CSE (On-going)</h3>
                                         <p>Daffodil International University</p>
                                     </div>
@@ -315,6 +303,43 @@
         </div>
     </section>
     <!-- Portfolio section end -->
+    <!-- Service section start -->
+    <section id="service">
+        <div class="container">
+            <div class="row m-auto">
+                <div class="col-lg-11 col-md-12 col-sm-12 col-12 m-auto">
+                    <h1 class="service-heading">My <span>Service</span></h1>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-12 mt-3 m-auto">
+                            <div class="service-box">
+                                <h5>Design</h5>
+                                <i class="fas fa-desktop service-box-icon"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-12 mt-3 m-auto">
+                            <div class="service-box">
+                                <h5>Development</h5>
+                                <i class="fas fa-code service-box-icon"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-12 mt-3 m-auto">
+                            <div class="service-box">
+                                <h5>Testing</h5>
+                                <i class="fas fa-vial service-box-icon"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-12 mt-3 m-auto">
+                            <div class="service-box">
+                                <h5>Launch</h5>
+                                <i class="fas fa-rocket service-box-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service section end -->
     <!-- Contact section start -->
     <section id="contact">
         <div class="container">
@@ -400,7 +425,7 @@
             </div>
     </section>
     <!-- Footer section end -->
-    
+
     <!-- Jquery link start -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <!-- Jquery link end -->
@@ -417,6 +442,9 @@
     <!-- Main js start -->
     <script src="script.js"></script>
     <!-- Main js end -->
+    <!-- typed js start -->
+    <script src="js/typed.min.js"></script>
+    <!-- typed js end -->
 </body>
 
 </html>
